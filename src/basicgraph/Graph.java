@@ -121,8 +121,22 @@ public abstract class Graph {
 	 * @return The degree sequence of this graph.
 	 */
 	public List<Integer> degreeSequence() {
-		// XXX: Implement in part 1 of week 2
-		return null;
+        List<Integer> degreelist = new ArrayList<>();
+        int indegree = 0;
+        int outdegree = 0;
+        for(int i = 0; i < this.numVertices; i++){
+            if(this.getNeighbors(i) != null){
+                outdegree = this.getNeighbors(i).size();
+            }
+            if(this.getInNeighbors(i) != null){
+                indegree = this.getInNeighbors(i).size();
+            }
+            degreelist.add(i,indegree + outdegree);
+        }
+
+
+        Collections.sort(degreelist,Collections.reverseOrder());
+        return degreelist;
 	}
 	
 	/**
@@ -229,7 +243,7 @@ public abstract class Graph {
 	
 	/** Main method provided with some basic tests.  */
 	public static void main (String[] args) {
-		GraphLoader.createIntersectionsFile("data/maps/ucsd.map", "data/intersections/ucsd.intersections");
+		GraphLoader.createIntersectionsFile("data/testdata/simpletest.map", "data/intersections/ucsd.intersections");
 		
 
 		// For testing of Part 1 functionality
