@@ -22,8 +22,10 @@ import util.GraphLoader;
  */
 public class MapGraph {
     //TODO: Add your member variables here in WEEK 3
-    private HashMap<GeographicPoint,MapNode> hashMap = new HashMap<>();
-    private Map<MapNode, ArrayList<MapNode>> adjListsMap = new HashMap<MapNode, ArrayList<MapNode>>();
+    private HashMap<GeographicPoint,MapNode> hashMap ;
+    private HashSet<MapEdge> edges;
+    private Map<MapNode, ArrayList<MapNode>> adjListsMap;
+    private HashMap<MapNode,Double> distance;
 
 
     /**
@@ -32,6 +34,9 @@ public class MapGraph {
     public MapGraph() {
         // TODO: Implement in this constructor in WEEK 3
         this.hashMap = new HashMap<>();
+        this.edges = new HashSet<>();
+        this.adjListsMap = new HashMap<>();
+        this.distance = new HashMap<>();
     }
 
     /**
@@ -105,6 +110,7 @@ public class MapGraph {
             MapEdge newEdge = new MapEdge(from,to,roadName,roadType,length);
             hashMap.get(from).addEdge(newEdge);
             adjListsMap.get(hashMap.get(from)).add(hashMap.get(to));
+            edges.add(newEdge);
         }
         else{
             throw new IllegalArgumentException("Illegal arguments");
@@ -154,16 +160,13 @@ public class MapGraph {
 
         while(!queue.isEmpty()){
             curr = queue.poll();
-            GeographicPoint currGeo = curr.getGeograpicPoint();
-            //visited.add(curr);
+            nodeSearched.accept(curr.getGeograpicPoint());
             if(curr == goalNode){
                 while(parent.get(curr)!= null){
                     ((LinkedList<GeographicPoint>) route).addFirst(curr.getGeograpicPoint());
-                    nodeSearched.accept(curr.getGeograpicPoint());
                     curr = parent.get(curr);
                 }
                 ((LinkedList<GeographicPoint>) route).addFirst(curr.getGeograpicPoint());
-                nodeSearched.accept(curr.getGeograpicPoint());
                 return route;
             }
             for(MapNode node : adjListsMap.get(curr)){
@@ -206,11 +209,74 @@ public class MapGraph {
                                           GeographicPoint goal, Consumer<GeographicPoint> nodeSearched) {
         // TODO: Implement this method in WEEK 4
 
-        // Hook for visualization.  See writeup.
-        //nodeSearched.accept(next.getLocation());
+        MapNode startNode = hashMap.get(start);
+        MapNode goalNode = hashMap.get(goal);
+        HashSet<MapNode> visited = new HashSet<>();
+        PriorityQueue<MapNode> queue = new PriorityQueue<>(getNumVertices(),dijkstraOrder);
+        MapNode curr = startNode;
+        HashMap<MapNode,MapNode> parent = new HashMap<>();
+        List<GeographicPoint> route = new LinkedList<>();
+
+        //initialize the distances of all nodes
+        for(MapNode node : hashMap.values()){
+            distance.put(node,10000000.0);
+        }
+
+        queue.add(startNode);
+        distance.put(startNode,0.0);
+
+        while(!queue.isEmpty()){
+            curr = queue.poll();
+            nodeSearched.accept(curr.getGeograpicPoint());
+            if(!visited.contains(curr)){
+                visited.add(curr);
+                if(curr == goalNode){
+                    while(parent.get(curr)!= null){
+                        ((LinkedList<GeographicPoint>) route).addFirst(curr.getGeograpicPoint());
+                        curr = parent.get(curr);
+                    }
+                    ((LinkedList<GeographicPoint>) route).addFirst(curr.getGeograpicPoint());
+                    return route;
+                }
+                for(MapNode node : adjListsMap.get(curr)){
+                    if(!visited.contains(node)){
+                        double addedDis = curr.getEdgeTo(node).getDistance() + distance.get(curr);
+                        if(addedDis < distance.get(node)){
+                            distance.replace(node,addedDis);
+                            parent.put(node,curr);
+                            queue.add(node);
+                        }
+                    }
+                }
+            }
+
+
+
+
+
+
+        }
 
         return null;
     }
+
+    Comparator<MapNode> dijkstraOrder = new Comparator<MapNode>() {
+        @Override
+        public int compare(MapNode o1, MapNode o2) {
+            if(distance.get(o1) < distance.get(o2)){
+                return -1;
+            }
+            else if(distance.get(o1) > distance.get(o2)){
+                return 1;
+            }
+            else{
+                return 0;
+            }
+        }
+    };
+
+
+
 
     /** Find the path from start to goal using A-Star search
      *
@@ -238,11 +304,70 @@ public class MapGraph {
                                              GeographicPoint goal, Consumer<GeographicPoint> nodeSearched) {
         // TODO: Implement this method in WEEK 4
 
-        // Hook for visualization.  See writeup.
-        //nodeSearched.accept(next.getLocation());
 
+        Comparator<MapNode> AstarOrder = new Comparator<MapNode>() {
+            @Override
+            public int compare(MapNode o1, MapNode o2) {
+                double f1 = distance.get(o1) + o1.getGeograpicPoint().distance(hashMap.get(goal).getGeograpicPoint());
+                if(distance.get(o1) < distance.get(o2)){
+                    return -1;
+                }
+                else if(distance.get(o1) > distance.get(o2)){
+                    return 1;
+                }
+                else{
+                    return 0;
+                }
+            }
+        };
+
+        MapNode startNode = hashMap.get(start);
+        MapNode goalNode = hashMap.get(goal);
+        HashSet<MapNode> visited = new HashSet<>();
+        PriorityQueue<MapNode> queue = new PriorityQueue<>(getNumVertices(),AstarOrder);
+        MapNode curr = startNode;
+        HashMap<MapNode,MapNode> parent = new HashMap<>();
+        List<GeographicPoint> route = new LinkedList<>();
+
+        //initialize the distances of all nodes
+        for(MapNode node : hashMap.values()){
+            distance.put(node,10000000.0);
+        }
+
+        queue.add(startNode);
+        distance.put(startNode,0.0);
+
+        while(!queue.isEmpty()){
+            curr = queue.poll();
+            nodeSearched.accept(curr.getGeograpicPoint());
+            if(!visited.contains(curr)){
+                visited.add(curr);
+                if(curr == goalNode){
+                    while(parent.get(curr)!= null){
+                        ((LinkedList<GeographicPoint>) route).addFirst(curr.getGeograpicPoint());
+                        curr = parent.get(curr);
+                    }
+                    ((LinkedList<GeographicPoint>) route).addFirst(curr.getGeograpicPoint());
+                    return route;
+                }
+                for(MapNode node : adjListsMap.get(curr)){
+                    if(!visited.contains(node)){
+                        double addedDis = curr.getEdgeTo(node).getDistance() + distance.get(curr);
+                        if(addedDis < distance.get(node)){
+                            distance.replace(node,addedDis);
+                            parent.put(node,curr);
+                            queue.add(node);
+                        }
+                    }
+                }
+            }
+        }
         return null;
     }
+
+
+
+
 
 
     public static void main(String[] args) {

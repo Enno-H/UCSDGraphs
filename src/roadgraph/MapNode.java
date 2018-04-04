@@ -40,7 +40,22 @@ public class MapNode {
         return location;
     }
 
-    public boolean equals(MapNode node){
-        return this.location == node.location;
+    public boolean equals(Object o)
+    {
+        if (!(o instanceof MapNode) || (o == null)) {
+            return false;
+        }
+        MapNode node = (MapNode)o;
+        return node.location.equals(this.location);
+    }
+
+
+    public MapEdge getEdgeTo (MapNode node){
+        for(MapEdge edge : edges){
+            if(edge.getEnd().equals(node.location)){
+                return edge;
+            }
+        }
+        return null;
     }
 }

@@ -1,106 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18be72e5-eec1-40c2-b2b7-cd8ddcae5eef" name="Default" comment="degreeSequence() &amp;  getDistance2(int v)">
-      <change afterPath="$PROJECT_DIR$/src/roadgraph/MapEdge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/roadgraph/MapNode.java" afterDir="false" />
+    <list default="true" id="18be72e5-eec1-40c2-b2b7-cd8ddcae5eef" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/data/maps/auckland.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/CLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/CLabel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/DataSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/DataSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/GeoLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/GeoLabel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/MapApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/MapApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/MarkerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/MarkerManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/RouteVisualization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/RouteVisualization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/SelectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/SelectManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/TestApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/TestApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/controllers/FetchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/controllers/FetchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/controllers/RouteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/controllers/RouteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/services/GeneralService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/services/GeneralService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/services/RouteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/services/RouteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basicgraph/DegreeGrader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basicgraph/DegreeGrader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basicgraph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basicgraph/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basicgraph/GraphAdjList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basicgraph/GraphAdjList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basicgraph/GraphAdjMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basicgraph/GraphAdjMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basicgraph/GraphGrader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basicgraph/GraphGrader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geography/GeographicPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geography/GeographicPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geography/RoadSegment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geography/RoadSegment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/ArrayTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/ArrayTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/GoogleMapView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/GoogleMapView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/MapComponentInitializedListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/MapComponentInitializedListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/MapNotInitializedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/MapNotInitializedException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/MapReadyListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/MapReadyListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/IJavascriptRuntime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/IJavascriptRuntime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/IWebEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/IWebEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/JavaFxWebEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/JavaFxWebEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/JavascriptArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/JavascriptArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/JavascriptEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/JavascriptEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/JavascriptFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/JavascriptFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/JavascriptFunctionLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/JavascriptFunctionLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/JavascriptObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/JavascriptObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/JavascriptRuntime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/JavascriptRuntime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/event/EventHandlers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/event/EventHandlers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/event/GFXEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/event/GFXEventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/event/MapStateEventType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/event/MapStateEventType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/event/StateEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/event/StateEventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/event/UIEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/event/UIEventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/event/UIEventType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/event/UIEventType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/object/Animation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/object/Animation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/object/GMapObjectType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/object/GMapObjectType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/object/GMapPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/object/GMapPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/object/GoogleMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/object/GoogleMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/object/InfoWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/object/InfoWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/object/InfoWindowOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/object/InfoWindowOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/object/LatLong.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/object/LatLong.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/object/LatLongBounds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/object/LatLongBounds.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/object/MVCArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/object/MVCArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/object/MapOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/object/MapOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/object/MapShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/object/MapShape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/object/MapTypeIdEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/object/MapTypeIdEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/object/Marker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/object/Marker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/object/MarkerOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/object/MarkerOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/object/MarkerShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/object/MarkerShape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/object/Polyline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/object/Polyline.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/object/PolylineOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/object/PolylineOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/object/Projection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/object/Projection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/javascript/object/Size.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/javascript/object/Size.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/service/elevation/ElevationResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/service/elevation/ElevationResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/service/elevation/ElevationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/service/elevation/ElevationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/service/elevation/ElevationServiceCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/service/elevation/ElevationServiceCallback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/service/elevation/ElevationStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/service/elevation/ElevationStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/service/elevation/LocationElevationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/service/elevation/LocationElevationRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/service/elevation/PathElevationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/service/elevation/PathElevationRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/service/geocoding/GeocodingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/service/geocoding/GeocodingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/shapes/ArcBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/shapes/ArcBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/shapes/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/shapes/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/shapes/CircleOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/shapes/CircleOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/shapes/FillableMapShapeOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/shapes/FillableMapShapeOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/shapes/MapShapeOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/shapes/MapShapeOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/shapes/Polygon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/shapes/Polygon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/shapes/PolygonOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/shapes/PolygonOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/shapes/Polyline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/shapes/Polyline.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/shapes/PolylineOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/shapes/PolylineOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/shapes/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/shapes/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/shapes/RectangleOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/shapes/RectangleOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/shapes/StrokePosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/shapes/StrokePosition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/zoom/MaxZoomResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/zoom/MaxZoomResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/zoom/MaxZoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/zoom/MaxZoomService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/zoom/MaxZoomServiceCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/zoom/MaxZoomServiceCallback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gmapsfx/zoom/MaxZoomStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gmapsfx/zoom/MaxZoomStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/routing.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/routing.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/visual.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/visual.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mapmaker/DataFetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mapmaker/DataFetcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mapmaker/MapMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mapmaker/MapMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/roadgraph/AStarGrader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/roadgraph/AStarGrader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/roadgraph/CorrectAnswer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/roadgraph/CorrectAnswer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/roadgraph/DijkstraGrader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/roadgraph/DijkstraGrader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/roadgraph/MapGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/roadgraph/MapGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/roadgraph/SearchGrader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/roadgraph/SearchGrader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/GraphLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/GraphLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week3example/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week3example/Maze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week3example/MazeLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week3example/MazeLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week3example/MazeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week3example/MazeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/roadgraph/MapNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/roadgraph/MapNode.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -112,54 +17,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MapApp.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/application/MapApp.java">
+      <file leaf-file-name="MapGraph.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/roadgraph/MapGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="338" column="34" lean-forward="true" selection-start-line="338" selection-start-column="34" selection-end-line="338" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Graph.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/basicgraph/Graph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1063">
-              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+            <state relative-caret-position="434">
+              <caret line="363" column="9" selection-start-line="363" selection-start-column="9" selection-end-line="363" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#5066#5075#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MapEdge.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/roadgraph/MapEdge.java">
+      <file leaf-file-name="AStarGrader.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/roadgraph/AStarGrader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-              <folding>
-                <element signature="e#344#345#0" expanded="true" />
-                <element signature="e#378#379#0" expanded="true" />
-                <element signature="e#417#418#0" expanded="true" />
-                <element signature="e#446#447#0" expanded="true" />
-                <element signature="e#490#491#0" expanded="true" />
-                <element signature="e#522#523#0" expanded="true" />
-                <element signature="e#632#633#0" expanded="true" />
-                <element signature="e#663#664#0" expanded="true" />
-                <element signature="e#574#575#0" expanded="true" />
-                <element signature="e#614#615#0" expanded="true" />
-                <element signature="e#666#667#0" expanded="true" />
-                <element signature="e#700#701#0" expanded="true" />
-                <element signature="e#714#715#0" expanded="true" />
-                <element signature="e#747#748#0" expanded="true" />
-                <element signature="e#798#799#0" expanded="true" />
-                <element signature="e#831#832#0" expanded="true" />
-                <element signature="e#1000#1001#0" expanded="true" />
-                <element signature="e#1026#1027#0" expanded="true" />
-                <element signature="e#870#871#0" expanded="true" />
-                <element signature="e#896#897#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="241">
+              <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -167,71 +42,20 @@
       <file leaf-file-name="MapNode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/roadgraph/MapNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="861">
+              <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#165#166#0" expanded="true" />
-                <element signature="e#219#220#0" expanded="true" />
-                <element signature="e#296#297#0" expanded="true" />
-                <element signature="e#330#331#0" expanded="true" />
-                <element signature="e#376#377#0" expanded="true" />
-                <element signature="e#402#403#0" expanded="true" />
-                <element signature="e#453#454#0" expanded="true" />
-                <element signature="e#472#473#0" expanded="true" />
-                <element signature="e#656#657#0" expanded="true" />
+                <element signature="e#480#481#0" expanded="true" />
+                <element signature="e#514#515#0" expanded="true" />
+                <element signature="e#552#553#0" expanded="true" />
+                <element signature="e#585#586#0" expanded="true" />
+                <element signature="e#625#626#0" expanded="true" />
+                <element signature="e#661#662#0" expanded="true" />
                 <element signature="e#690#691#0" expanded="true" />
-                <element signature="e#752#753#0" expanded="true" />
-                <element signature="e#782#783#0" expanded="true" />
-                <element signature="e#749#750#0" expanded="true" />
-                <element signature="e#792#793#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GraphAdjList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/basicgraph/GraphAdjList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MapGraph.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/roadgraph/MapGraph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="276" column="45" lean-forward="true" selection-start-line="276" selection-start-column="45" selection-end-line="276" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#694#723#0" expanded="true" />
-                <element signature="e#5066#5075#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchGrader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/roadgraph/SearchGrader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="162" column="12" selection-start-line="162" selection-start-column="12" selection-end-line="162" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GraphLoader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/util/GraphLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="560" selection-start-line="560" selection-end-line="560" />
-              <folding>
-                <element signature="e#3723#3724#0" expanded="true" />
-                <element signature="e#3777#3778#0" expanded="true" />
-                <element signature="e#4667#4684#0" expanded="true" />
-                <element signature="e#21701#21709#0" expanded="true" />
+                <element signature="e#725#726#0" expanded="true" />
+                <element signature="e#774#775#0" expanded="true" />
+                <element signature="e#805#806#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -245,6 +69,15 @@
               <folding>
                 <element signature="e#195#196#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapEdge.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/roadgraph/MapEdge.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-31">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -274,8 +107,11 @@
         <option value="$PROJECT_DIR$/src/basicgraph/Graph.java" />
         <option value="$PROJECT_DIR$/src/roadgraph/Location.java" />
         <option value="$PROJECT_DIR$/src/roadgraph/MapEdge.java" />
-        <option value="$PROJECT_DIR$/src/roadgraph/MapNode.java" />
         <option value="$PROJECT_DIR$/src/roadgraph/SearchGrader.java" />
+        <option value="$PROJECT_DIR$/src/util/GraphLoader.java" />
+        <option value="$PROJECT_DIR$/data/maps/auckland.map" />
+        <option value="$PROJECT_DIR$/src/roadgraph/MapNode.java" />
+        <option value="$PROJECT_DIR$/src/roadgraph/DijkstraGrader.java" />
         <option value="$PROJECT_DIR$/src/roadgraph/MapGraph.java" />
       </list>
     </option>
@@ -309,6 +145,11 @@
             <path>
               <item name="UCSDGraphs" type="b2602c69:ProjectViewProjectNode" />
               <item name="UCSDGraphs" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UCSDGraphs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UCSDGraphs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -316,6 +157,18 @@
               <item name="UCSDGraphs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UCSDGraphs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UCSDGraphs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="geography" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UCSDGraphs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UCSDGraphs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="roadgraph" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UCSDGraphs" type="b2602c69:ProjectViewProjectNode" />
@@ -335,6 +188,11 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/maps" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -347,17 +205,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MapApp">
+  <component name="RunManager" selected="Application.AStarGrader">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
-    <configuration name="Graph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="basicgraph.Graph" />
+    <configuration name="AStarGrader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="roadgraph.AStarGrader" />
       <module name="UCSDGraphs" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="basicgraph.*" />
+          <option name="PATTERN" value="roadgraph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="DijkstraGrader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="roadgraph.DijkstraGrader" />
+      <module name="UCSDGraphs" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="roadgraph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -450,17 +319,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list>
-      <item itemvalue="Application.Graph" />
       <item itemvalue="Application.MapApp" />
       <item itemvalue="Application.MapGraph" />
       <item itemvalue="Application.SearchGrader" />
+      <item itemvalue="Application.DijkstraGrader" />
+      <item itemvalue="Application.AStarGrader" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AStarGrader" />
+        <item itemvalue="Application.DijkstraGrader" />
         <item itemvalue="Application.MapApp" />
         <item itemvalue="Application.MapGraph" />
         <item itemvalue="Application.SearchGrader" />
-        <item itemvalue="Application.Graph" />
       </list>
     </recent_temporary>
   </component>
@@ -480,7 +351,7 @@
       <workItem from="1520023972304" duration="13773000" />
       <workItem from="1522197826982" duration="23000" />
       <workItem from="1522198338683" duration="14000" />
-      <workItem from="1522722824445" duration="21497000" />
+      <workItem from="1522722824445" duration="32345000" />
     </task>
     <task id="LOCAL-00001" summary="degreeSequence() &amp;  getDistance2(int v)">
       <created>1520133016818</created>
@@ -489,11 +360,18 @@
       <option name="project" value="LOCAL" />
       <updated>1520133016819</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="BFS route implement">
+      <created>1522831185524</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1522831185524</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37658000" />
+    <option name="totallyTimeSpent" value="48506000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -524,6 +402,7 @@
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49912128" visible="true" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32900944" />
       <window_info id="Structure" order="1" sideWeight="0.50087875" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -535,7 +414,6 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
@@ -576,11 +454,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="degreeSequence() &amp;  getDistance2(int v)" />
-    <option name="LAST_COMMIT_MESSAGE" value="degreeSequence() &amp;  getDistance2(int v)" />
+    <MESSAGE value="BFS route implement" />
+    <option name="LAST_COMMIT_MESSAGE" value="BFS route implement" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -670,11 +549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/maps/uoa.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-37242" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/intersections/uoa.intersections">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -724,69 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/basicgraph/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1063">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/roadgraph/MapEdge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-            <element signature="e#798#799#0" expanded="true" />
-            <element signature="e#831#832#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1026#1027#0" expanded="true" />
-            <element signature="e#870#871#0" expanded="true" />
-            <element signature="e#896#897#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/roadgraph/MapNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#165#166#0" expanded="true" />
-            <element signature="e#219#220#0" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#782#783#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#792#793#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/roadgraph/CorrectAnswer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -801,20 +612,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/geography/GeographicPoint.java">
+    <entry file="file://$PROJECT_DIR$/src/basicgraph/GraphAdjList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#195#196#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="32">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/maps/uoa.map">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="2341" column="73" lean-forward="true" selection-start-line="2341" selection-start-column="73" selection-end-line="2341" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/maps/new_york.map">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/maps/auckland.map">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="727">
+          <caret line="2354" selection-start-line="2354" selection-end-line="2354" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/util/GraphLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="560" selection-start-line="560" selection-end-line="560" />
+        <state relative-caret-position="36">
+          <caret line="90" column="44" lean-forward="true" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
           <folding>
             <element signature="e#3723#3724#0" expanded="true" />
             <element signature="e#3777#3778#0" expanded="true" />
@@ -824,10 +649,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/basicgraph/GraphAdjList.java">
+    <entry file="file://$PROJECT_DIR$/src/basicgraph/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        <state relative-caret-position="798">
+          <caret line="229" column="35" lean-forward="true" selection-start-line="229" selection-start-column="35" selection-end-line="229" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/MapApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2201">
+          <caret line="206" selection-start-line="206" selection-end-line="206" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -840,27 +678,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/roadgraph/DijkstraGrader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="465">
+          <caret line="141" column="12" selection-start-line="141" selection-start-column="12" selection-end-line="141" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/roadgraph/MapEdge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/geography/GeographicPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#195#196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/roadgraph/MapNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="861">
+          <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#690#691#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#805#806#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/roadgraph/MapGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="276" column="45" lean-forward="true" selection-start-line="276" selection-start-column="45" selection-end-line="276" selection-end-column="45" />
+        <state relative-caret-position="434">
+          <caret line="363" column="9" selection-start-line="363" selection-start-column="9" selection-end-line="363" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#694#723#0" expanded="true" />
             <element signature="e#5066#5075#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/MapApp.java">
+    <entry file="file://$PROJECT_DIR$/src/roadgraph/AStarGrader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="338" column="34" lean-forward="true" selection-start-line="338" selection-start-column="34" selection-end-line="338" selection-end-column="34" />
+        <state relative-caret-position="241">
+          <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
         </state>
       </provider>
     </entry>
