@@ -27,6 +27,9 @@ public class MapGraph {
     private Map<MapNode, ArrayList<MapNode>> adjListsMap;
     private HashMap<MapNode,Double> distance;
 
+    int diNum = 0;
+    int aNum = 0;
+
 
     /**
      * Create a new empty MapGraph
@@ -227,6 +230,8 @@ public class MapGraph {
 
         while(!queue.isEmpty()){
             curr = queue.poll();
+            diNum++;
+            System.out.println(diNum+": dijkstra visiting:"+curr.getGeograpicPoint().toString());
             nodeSearched.accept(curr.getGeograpicPoint());
             if(!visited.contains(curr)){
                 visited.add(curr);
@@ -309,10 +314,11 @@ public class MapGraph {
             @Override
             public int compare(MapNode o1, MapNode o2) {
                 double f1 = distance.get(o1) + o1.getGeograpicPoint().distance(hashMap.get(goal).getGeograpicPoint());
-                if(distance.get(o1) < distance.get(o2)){
+                double f2 = distance.get(o2) + o2.getGeograpicPoint().distance(hashMap.get(goal).getGeograpicPoint());
+                if(f1 < f2){
                     return -1;
                 }
-                else if(distance.get(o1) > distance.get(o2)){
+                else if(f1 > f2){
                     return 1;
                 }
                 else{
@@ -339,6 +345,8 @@ public class MapGraph {
 
         while(!queue.isEmpty()){
             curr = queue.poll();
+            aNum++;
+            System.out.println(aNum+": aStar visiting:"+curr.getGeograpicPoint().toString());
             nodeSearched.accept(curr.getGeograpicPoint());
             if(!visited.contains(curr)){
                 visited.add(curr);
